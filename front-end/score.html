@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- javascript -->
+  <script defer src="./browser-app.js"></script>
+
+  <script defer src="./scores_js.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-center">
+      <!-- nav header -->
+      <div class="nav-header">
+        <img src="./logo.png" class="logo" alt="logo" />
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="home">home</a>
+        </li>
+        <li>
+          <a href="scores">scores</a>
+        </li>
+
+      </ul>
+      
+    </div>
+  </nav>
+  <h3>insert new score</h3>
+  <form class="scoreForm" action="/score" method="post">
+    <label for="gameID">gameID<input type="text" name="gameID" placeholder="game_id"></label>
+    
+    <label for="userID">userID<input type="text" name="userID" placeholder="user_id"></label>
+    
+    <label for="score">score<input type="text" name="score" placeholder="score"></label>
+    
+    <button type="submit">submit</button>
+  </form>
+  <hr>
+  <h1>scores</h1>
+  <table class="scoreWindow"></div>
+</body>
+
+</html>
